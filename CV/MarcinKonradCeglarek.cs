@@ -12,7 +12,7 @@
     {
         public static readonly string[] ContactInformation = { "marcin.ceglarek@gmail.com" };
 
-        public override IDictionary<Skill, Level> Skills()                                   ////
+        public override IDictionary<Skill, Level> Skills()
         {                                                                                    ////                                 ````
             return new Dictionary<Skill, Level>                                              ////                       ``/syys++yhdmdddhys+-`
                        {                                                                     ////                   `-+ydmNNNNNNNNNMMMMMMMMMMNho:`
@@ -44,57 +44,58 @@
                        };                                                                    //// `````````````````:sso+/////+++//:::::///+osyyhhhydMMMMMh+.``````` 
         }                                                                                    //// ````````````````.-/yhs+/:::::::::::://+oyyhdmdhydMMMMMMMMNy:````` 
                                                                                              //// ``````````./oydmNMMMMNho//:::::::///oshdmmmddhdNMMMMMMMMMMMMd/``` 
-        public List<Employer> WorkExperience()                                               //// ```````:smMMMMMMMMMMMMMNyo+++++oosyhmmmmmdddmNMMMMMMMMMMMMMMMMm+` 
+        public override List<Employer> WorkExperience()                                      //// ```````:smMMMMMMMMMMMMMNyo+++++oosyhmmmmmdddmNMMMMMMMMMMMMMMMMm+` 
         {                                                                                    //// `````/mMMMMMMMMMMMMMMMMMMmdmmmmNNNNmmmdddmNMMMMMMMMMMMMMMMMMMMMMN 
             return new List<Employer>                                                        //// ```-dMMMMMMMMMMMMMMMMMMMMNdddddmmmmmmmNMMMMMMMMMMMMMMMMMMMMMMMMMM 
                        {                                                                     //// ``.dMMMMMMMMMMMMMMMMMMMMMMMmhhhdmmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM 
                            new Employer
                                {
-                                   StartDate = new DateTime(2015, 2, 2),        EndDate = DateTime.Now,                          
-                                   Name = "Intel Technology Poland",                                                             
-                                   JobTitle = "Software Validation Test Enginner",                                               
-                                   JobDescription = "Development of testing frameworks and automated tests for RSA project",     
+                                   StartDate = new DateTime(2015, 02, 02),                   EndDate = DateTime.Now,                          
+                                   Company = "Intel Technology Poland",                                                             
+                                   Position = "Software Validation Test Enginner",                                               
+                                   Description = "Development of testing frameworks and automated tests for RSA project",     
                                    Tools = new[] { "C#" }                                                                        
                                },                                                                                                
-                            new Employer()                                                                                       
+                            new Employer                                                                                      
                                 {                                                                                                
-                                    StartDate = new DateTime(2014, 4, 22),      EndDate = new DateTime(2015, 2, 28),             
-                                    Name = "Self-employed",
-                                    JobTitle = "C# .NET Developer",
-                                    JobsDescription = new[] { "MVC .NET based loyalty system", "MVC .NET based customer support application", "POC Ember based matchmaking web application" }
+                                    StartDate = new DateTime(2014, 04, 22),                  EndDate = new DateTime(2015, 02, 28),             
+                                    Company = "Self-employed",
+                                    Position = "C# .NET Developer",
+                                    Projects = new[] { "MVC .NET based loyalty system", "MVC .NET based customer support application", "POC Ember based matchmaking web application" }, 
+                                    Tools = new [] { ".NET", "MVC", "Entity Framework", "Ember" }
                                 }, 
                             new Employer
                                 {
-                                    StartDate = new DateTime(2013, 7, 1),       EndDate = new DateTime(2014, 5, 31),
-                                    Name = "Intel Technology Poland (outsourced by SII sp. z o.o.)",
-                                    JobTitle = "Software Engineer",
-                                    JobDescription = "Development of Command Center - distributed testing platform based on MVC .NET technology and WCF web services.",
-                                    Tools = new[] { ".NET", "MVC", "Razor", "Kendo" }
+                                    StartDate = new DateTime(2013, 07, 01),                  EndDate = new DateTime(2014, 05, 31),
+                                    Company = "Intel Technology Poland (outsourced by SII sp. z o.o.)",
+                                    Position = "Software Engineer",
+                                    Description = "Development of Command Center - distributed testing platform based on MVC .NET technology and WCF web services.",
+                                    Tools = new[] { ".NET", "MVC", "Entity Framework", "Razor", "Kendo" }
                                 },
                             new Employer
                                 {
-                                    StartDate = new DateTime(2012, 1, 1),       EndDate = new DateTime(2013, 6, 30),
-                                    Name = "Gemalto (outsourced by SII sp. z o.o)", 
-                                    JobTitle = "Software Engineer",
-                                    JobDescription = "Automation of creation and validation process for smartcards"
+                                    StartDate = new DateTime(2012, 01, 01),                  EndDate = new DateTime(2013, 06, 30),
+                                    Company = "Gemalto (outsourced by SII sp. z o.o)", 
+                                    Position = "Software Engineer",
+                                    Description = "Automation of creation and validation process for smartcards"
                                 },
                             new Employer
                                 {
-                                    StartDate = new DateTime(2011, 01, 01),     EndDate = new DateTime(2011, 12, 31),
-                                    Name = "Gdańsk University of Technology, IT Service Center (CUI)",
-                                    JobTitle = "Webmaster",
-                                    JobDescription = "Development of web applications for internal use"
+                                    StartDate = new DateTime(2011, 01, 01),                  EndDate = new DateTime(2011, 12, 31),
+                                    Company = "Gdańsk University of Technology, IT Service Center (CUI)",
+                                    Position = "Webmaster",
+                                    Description = "Development of web applications for internal use"
                                 }
                        };
         }
 
-        public List<School> Education()
+        public override List<School> Education()
         {
             return new List<School>
                        {
                            new School
                                {
-                                   GraduationDate = new DateTime(2011),
+                                   GraduationDate = new DateTime(2011, 09, 28),
                                    Name = "Gdańsk’s University of Technology",
                                    Degree = Degree.Masters,
                                    Department = "Department of Intelligent Interactive Systems"

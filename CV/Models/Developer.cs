@@ -14,6 +14,10 @@
 
         public abstract IDictionary<string, Level> Skills();
 
+        public abstract List<Employer> WorkExperience();
+
+        public abstract List<School> Education();
+
         #endregion
     }
 }
