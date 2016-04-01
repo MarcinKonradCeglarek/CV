@@ -41,12 +41,13 @@
   <ItemGroup>
     <Compile Include="Models\Developer.cs" />
     <Compile Include="Models\Employer.cs" />
-    <Compile Include="Enums\Degree.cs" />
-    <Compile Include="Enums\Level.cs" />
+    <Compile Include="Models\Degree.cs" />
+    <Compile Include="Models\Level.cs" />
     <Compile Include="MarcinKonradCeglarek.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\School.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

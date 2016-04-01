@@ -2,8 +2,6 @@
 {
     using System;
 
-    using CV.Enums;
-
     public class School
     {
         #region Public Properties

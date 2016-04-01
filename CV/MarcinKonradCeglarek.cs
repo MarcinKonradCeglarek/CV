@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
 
-    using CV.Enums;
     using CV.Models;
 
     using Skill = System.String;
@@ -44,7 +43,7 @@
                        };                                                                    //// `````````````````:sso+/////+++//:::::///+osyyhhhydMMMMMh+.``````` 
         }                                                                                    //// ````````````````.-/yhs+/:::::::::::://+oyyhdmdhydMMMMMMMMNy:````` 
                                                                                              //// ``````````./oydmNMMMMNho//:::::::///oshdmmmddhdNMMMMMMMMMMMMd/``` 
-        public override List<Employer> WorkExperience()                                      //// ```````:smMMMMMMMMMMMMMNyo+++++oosyhmmmmmdddmNMMMMMMMMMMMMMMMMm+` 
+        public override IList<Employer> WorkExperience()                                     //// ```````:smMMMMMMMMMMMMMNyo+++++oosyhmmmmmdddmNMMMMMMMMMMMMMMMMm+` 
         {                                                                                    //// `````/mMMMMMMMMMMMMMMMMMMmdmmmmNNNNmmmdddmNMMMMMMMMMMMMMMMMMMMMMN 
             return new List<Employer>                                                        //// ```-dMMMMMMMMMMMMMMMMMMMMNdddddmmmmmmmNMMMMMMMMMMMMMMMMMMMMMMMMMM 
                        {                                                                     //// ``.dMMMMMMMMMMMMMMMMMMMMMMMmhhhdmmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM 
@@ -62,7 +61,7 @@
                                     Company = "Self-employed",
                                     Position = "C# .NET Developer",
                                     Projects = new[] { "MVC .NET based loyalty system", "MVC .NET based customer support application", "POC Ember based matchmaking web application" }, 
-                                    Tools = new [] { ".NET", "MVC", "Entity Framework", "Ember" }
+                                    Tools = new[] { ".NET", "MVC", "Entity Framework", "Ember" }
                                 }, 
                             new Employer
                                 {
@@ -89,7 +88,7 @@
                        };
         }
 
-        public override List<School> Education()
+        public override IList<School> Education()
         {
             return new List<School>
                        {
@@ -104,5 +103,3 @@
         }
     }
 }
-
-

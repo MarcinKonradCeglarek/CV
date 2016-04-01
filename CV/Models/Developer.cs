@@ -4,7 +4,7 @@
 
     using System.Collections.Generic;
 
-    using CV.Enums;
+    using Skill = System.String;
 
     #endregion
 
@@ -12,11 +12,11 @@
     {
         #region Public Methods and Operators
 
+        public abstract IList<School> Education();
+
         public abstract IDictionary<string, Level> Skills();
 
-        public abstract List<Employer> WorkExperience();
-
-        public abstract List<School> Education();
+        public abstract IList<Employer> WorkExperience();
 
         #endregion
     }
