@@ -1,4 +1,14 @@
-﻿namespace CV
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="MarcinKonradCeglarek.cs">
+//   Copyright (c) 2012 All Rights Reserved
+// </copyright>
+// <legal>
+//   I hereby give consent for my personal data to be processed for the purposes of recruitment, in accordance 
+//   with the Personal Data Protection Act dated 29.08.1997 (uniform text: Journal of Laws of the Republic of 
+//   Poland 2002 No 101, item 926 with further amendments)
+// </legal>
+// --------------------------------------------------------------------------------------------------------------------
+namespace CV
 {
     using System;
     using System.Collections.Generic;
