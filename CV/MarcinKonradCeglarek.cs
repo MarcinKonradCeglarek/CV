@@ -25,7 +25,7 @@ namespace CV
         {                                                                                    ////                                 ````
             return new Dictionary<Skill, Level>                                              ////                       ``/syys++yhdmdddhys+-`
                        {                                                                     ////                   `-+ydmNNNNNNNNNMMMMMMMMMMNho:`
-                           // C# related skills                                              ////                  :hmNNNMMMMMMMMMMMMMMMMMMMMMMMMNs-
+                           // C# skills                                                      ////                  :hmNNNMMMMMMMMMMMMMMMMMMMMMMMMNs-
                            { "C#", Level.Great },                                            ////                :yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd/              
                            { "ASP.NET", Level.Good },                                        ////              -sNMMMMMMMMMMMMMMMMNNMMMMMMMMMMMMMMMMMMh.            
                            { "Razor", Level.Good },                                          ////            `+mMMMMMMMMNmmNNMMMMNMNNMMMMMMMMMMMMMMMMMMN/           
@@ -41,22 +41,26 @@ namespace CV
                            { "AngularJs", Level.Basic },                                     ////           `/NMhyyoo+++/::-------:::::::///+/+oooohMMMMMMMh`       
                            { "Ember", Level.Basic },                                         ////             +Nddhhhhhdhho+:::::/+syyyhhhyhhhhysoohMMMMMMd.        
                                                                                              ////             .mooshhhhmmhso/:::/oyhhhmmddhhysyysoosNMMMMm-         
-                           // Team management tools                                          ////            ``/+//+++++/////:-:/+++///so+sso++/+++odMMMmo```       
-                           { "Git", Level.Great },                                           ////           ````+//::///:::/:::////::://////::///+oohmmmy:```       
-                           { "Slack", Level.Good },                                          ////         ``````+//::::::://:::////::::--::::::/+oooyhhso`````      
-                           { "Jira", Level.Good },                                           ////       ````````++/:::::://::://///:::-----::://+ossyyso.```````    
+                           // Associated soft skills                                         ////            ``/+//+++++/////:-:/+++///so+sso++/+++odMMMmo```       
+                           { "Sociability", Level.Great },                                   ////           ````+//::///:::/:::////::://////::///+oohmmmy:```       
+                           { "English", Level.Good },                                        ////         ``````+//::::::://:::////::::--::::::/+oooyhhso`````      
+                           { "User-experience", Level.Moderate },                            ////       ````````++/:::::://::://///:::-----::://+ossyyso.```````    
                                                                                              ////      `````````++/:::::/oo/::/+o+o/:----::::/+++ossyy+.````````    
-                           // Social skills                                                  ////    ```````````/o+///////++osyyo++::::::::://+++ossss.``````````   
-                           { "English", Level.Good },                                        //// ``````````````-s++++o++//:::::::///////:::/++oossso:````````````  
-                           { "Teamwork", Level.Good },                                       //// ```````````````+s+///++ooo++++++ooso+//://+oossyssy/````````````` 
-                           { "Leadership", Level.Moderate },                                 //// ```````````````.+so+////+o++++++++/:::///+oosyyyyymNy+.`````````` 
-                       };                                                                    //// `````````````````:sso+/////+++//:::::///+osyyhhhydMMMMMh+.``````` 
-        }                                                                                    //// ````````````````.-/yhs+/:::::::::::://+oyyhdmdhydMMMMMMMMNy:````` 
-                                                                                             //// ``````````./oydmNMMMMNho//:::::::///oshdmmmddhdNMMMMMMMMMMMMd/``` 
-        public override IList<Employer> WorkExperience()                                     //// ```````:smMMMMMMMMMMMMMNyo+++++oosyhmmmmmdddmNMMMMMMMMMMMMMMMMm+` 
-        {                                                                                    //// `````/mMMMMMMMMMMMMMMMMMMmdmmmmNNNNmmmdddmNMMMMMMMMMMMMMMMMMMMMMN 
-            return new List<Employer>                                                        //// ```-dMMMMMMMMMMMMMMMMMMMMNdddddmmmmmmmNMMMMMMMMMMMMMMMMMMMMMMMMMM 
-                       {                                                                     //// ``.dMMMMMMMMMMMMMMMMMMMMMMMmhhhdmmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM 
+                           // Code management tools                                          ////    ```````````/o+///////++osyyo++::::::::://+++ossss.``````````   
+                           { "Git", Level.Great },                                           //// ``````````````-s++++o++//:::::::///////:::/++oossso:````````````  
+                           { "Slack", Level.Good },                                          //// ```````````````+s+///++ooo++++++ooso+//://+oossyssy/````````````` 
+                           { "Jira", Level.Good },                                           //// ```````````````.+so+////+o++++++++/:::///+oosyyyyymNy+.`````````` 
+                                                                                             //// `````````````````:sso+/////+++//:::::///+osyyhhhydMMMMMh+.``````` 
+                           // Other skills                                                   //// ````````````````.-/yhs+/:::::::::::://+oyyhdmdhydMMMMMMMMNy:`````               
+                           { "Teamwork", Level.Good },                                       //// ``````````./oydmNMMMMNho//:::::::///oshdmmmddhdNMMMMMMMMMMMMd/``` 
+                           { "Leadership", Level.Moderate },                                 //// ```````:smMMMMMMMMMMMMMNyo+++++oosyhmmmmmdddmNMMMMMMMMMMMMMMMMm+` 
+                       };                                                                    //// `````/mMMMMMMMMMMMMMMMMMMmdmmmmNNNNmmmdddmNMMMMMMMMMMMMMMMMMMMMMN 
+        }                                                                                    //// ```-dMMMMMMMMMMMMMMMMMMMMNdddddmmmmmmmNMMMMMMMMMMMMMMMMMMMMMMMMMM 
+                                                                                             //// ``.dMMMMMMMMMMMMMMMMMMMMMMMmhhhdmmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM 
+        public override IList<Employer> WorkExperience()                                     
+        {                                                                                    
+            return new List<Employer>                                                        
+                       {                                                                     
                            new Employer
                                {
                                    StartDate = new DateTime(2015, 02, 02),                   EndDate = DateTime.Now,                          
