@@ -19,7 +19,7 @@ namespace CV
 
     public class MarcinKonradCeglarek : Developer
     {
-        public static readonly string[] ContactInformation = { "marcin.ceglarek@gmail.com" };
+        public static readonly string EmailAddress = "marcin.ceglarek@gmail.com";
 
         public override IDictionary<Skill, Level> Skills()
         {                                                                                    ////                                 ````
@@ -37,8 +37,8 @@ namespace CV
                            { "StyleCop", Level.Good },                                       ////          /MMMMNs+//:::---------------:::::://///odNMMMMMMM-       
                                                                                              ////          +MMMMmo+/::::--------------:::::::////+smNMMMMMMMo       
                            // Other languages                                                ////          +NMMMdo+/:::::------------::::://////+ohNMMMMMMMMs       
-                           { "JavaScript", Level.Moderate },                                 ////          .yNMMho//::::-------------:::::////++++smMMMMMMMM+       
-                           { "AngularJs", Level.Basic },                                     ////           `/NMhyyoo+++/::-------:::::::///+/+oooohMMMMMMMh`       
+                           { "React/Redux", Level.Moderate },                                ////          .yNMMho//::::-------------:::::////++++smMMMMMMMM+       
+                           { "JavaScript", Level.Good },                                     ////           `/NMhyyoo+++/::-------:::::::///+/+oooohMMMMMMMh`       
                            { "Ember", Level.Basic },                                         ////             +Nddhhhhhdhho+:::::/+syyyhhhyhhhhysoohMMMMMMd.        
                                                                                              ////             .mooshhhhmmhso/:::/oyhhhmmddhhysyysoosNMMMMm-         
                            // Associated soft skills                                         ////            ``/+//+++++/////:-:/+++///so+sso++/+++odMMMmo```       
@@ -60,45 +60,53 @@ namespace CV
         public override IList<Employer> WorkExperience()                                     
         {                                                                                    
             return new List<Employer>                                                        
-                       {                                                                     
-                           new Employer
-                               {
-                                   StartDate = new DateTime(2015, 02, 02),                   EndDate = DateTime.Now,                          
-                                   Company = "Intel Technology Poland",                                                             
-                                   Position = "Software Validation Test Enginner",                                               
-                                   Description = "Development of testing frameworks and automated tests for RSA project",     
-                                   Tools = new[] { "C#" }                                                                        
-                               },                                                                                                
+                       {
+                            new Employer
+                            {
+                                StartDate = new DateTime(2016, 07, 06),                  EndDate = DateTime.Now,
+                                Company = "Redington Ltd",
+                                Position = "Software Developer",
+                                Description = "Development of in-house software for ",
+                                Tools = new[] { "C#", "F#", "React", "Redux", "TypeScript" }
+                            },
+                            new Employer
+                            {
+                                StartDate = new DateTime(2015, 02, 02),                  EndDate = new DateTime(2016, 06, 30),
+                                Company = "Intel Technology Poland",                                                             
+                                Position = "Software Validation Test Engineer",                                               
+                                Description = "Development of testing frameworks and automated tests for RSA project",     
+                                Tools = new[] { "C#" }                                                                        
+                            },                                                                                                
                             new Employer                                                                                      
-                                {                                                                                                
-                                    StartDate = new DateTime(2014, 04, 22),                  EndDate = new DateTime(2015, 02, 28),             
-                                    Company = "Self-employed",
-                                    Position = "C# .NET Developer",
-                                    Projects = new[] { "MVC .NET based loyalty system", "MVC .NET based customer support application", "POC Ember based matchmaking web application" }, 
-                                    Tools = new[] { ".NET", "MVC", "Entity Framework", "Ember" }
-                                }, 
+                            {                                                                                                
+                                StartDate = new DateTime(2014, 04, 22),                  EndDate = new DateTime(2015, 02, 28),             
+                                Company = "Self-employed",
+                                Position = "C# .NET Developer",
+                                Projects = new[] { "MVC .NET based loyalty system", "MVC .NET based customer support application", "POC Ember based matchmaking web application" }, 
+                                Tools = new[] { ".NET", "MVC", "Entity Framework", "Ember" }
+                            }, 
                             new Employer
-                                {
-                                    StartDate = new DateTime(2013, 07, 01),                  EndDate = new DateTime(2014, 05, 31),
-                                    Company = "Intel Technology Poland (outsourced by SII sp. z o.o.)",
-                                    Position = "Software Engineer",
-                                    Description = "Development of Command Center - distributed testing platform based on MVC .NET technology and WCF web services.",
-                                    Tools = new[] { ".NET", "MVC", "Entity Framework", "Razor", "Kendo" }
-                                },
+                            {
+                                StartDate = new DateTime(2013, 07, 01),                  EndDate = new DateTime(2014, 05, 31),
+                                Company = "Intel Technology Poland (outsourced by SII sp. z o.o.)",
+                                Position = "Software Engineer",
+                                Description = "Development of Command Center - distributed testing platform based on MVC .NET technology and WCF web services.",
+                                Tools = new[] { ".NET", "MVC", "Entity Framework", "Razor", "Kendo" }
+                            },
                             new Employer
-                                {
-                                    StartDate = new DateTime(2012, 01, 01),                  EndDate = new DateTime(2013, 06, 30),
-                                    Company = "Gemalto (outsourced by SII sp. z o.o)", 
-                                    Position = "Software Engineer",
-                                    Description = "Automation of creation and validation process for smartcards"
-                                },
+                            {
+                                StartDate = new DateTime(2012, 01, 01),                  EndDate = new DateTime(2013, 06, 30),
+                                Company = "Gemalto (outsourced by SII sp. z o.o)", 
+                                Position = "Software Engineer",
+                                Description = "Automation of creation and validation process for smartcards"
+                            },
                             new Employer
-                                {
-                                    StartDate = new DateTime(2011, 01, 01),                  EndDate = new DateTime(2011, 12, 31),
-                                    Company = "Gdańsk University of Technology, IT Service Center (CUI)",
-                                    Position = "Webmaster",
-                                    Description = "Development of web applications for internal use"
-                                }
+                            {
+                                StartDate = new DateTime(2011, 01, 01),                  EndDate = new DateTime(2011, 12, 31),
+                                Company = "Gdańsk University of Technology, IT Service Center (CUI)",
+                                Position = "Webmaster",
+                                Description = "Development of web applications for internal use"
+                            }
                        };
         }
 

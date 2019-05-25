@@ -14,7 +14,7 @@
 
         public abstract IList<School> Education();
 
-        public abstract IDictionary<string, Level> Skills();
+        public abstract IDictionary<Skill, Level> Skills();
 
         public abstract IList<Employer> WorkExperience();
 
